@@ -1,5 +1,0 @@
-<Solution>
-  <Project Path="GameNightPlanner/GameNightPlannerUI.csproj" />
-  <Project Path="GameNightPlannerDal/GameNightPlannerDal.csproj" />
-  <Project Path="GameNightPlannerLogic/GameNightPlannerLogic.csproj" />
-</Solution>
