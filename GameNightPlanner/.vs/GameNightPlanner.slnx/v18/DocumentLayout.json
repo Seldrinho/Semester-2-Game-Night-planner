@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jayde\\Documents\\GitHub\\Semester-2-Game-Night-planner\\GameNightPlanner\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D15E43F3-AF2B-4A3D-974D-155EC1C9D020}|GameNightPlannerLogic\\GameNightPlannerLogic.csproj|c:\\users\\jayde\\documents\\github\\semester-2-game-night-planner\\gamenightplanner\\gamenightplannerlogic\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D15E43F3-AF2B-4A3D-974D-155EC1C9D020}|GameNightPlannerLogic\\GameNightPlannerLogic.csproj|solutionrelative:gamenightplannerlogic\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB38C6CF-5C19-454D-AA1C-DE9A85AA2156}|GameNightPlannerDal\\GameNightPlannerDal.csproj|c:\\users\\jayde\\documents\\github\\semester-2-game-night-planner\\gamenightplanner\\gamenightplannerdal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB38C6CF-5C19-454D-AA1C-DE9A85AA2156}|GameNightPlannerDal\\GameNightPlannerDal.csproj|solutionrelative:gamenightplannerdal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jayde\\Documents\\GitHub\\Semester-2-Game-Night-planner\\GameNightPlanner\\GameNightPlannerDal\\Program.cs",
+              "RelativeDocumentMoniker": "GameNightPlannerDal\\Program.cs",
+              "ToolTip": "C:\\Users\\jayde\\Documents\\GitHub\\Semester-2-Game-Night-planner\\GameNightPlanner\\GameNightPlannerDal\\Program.cs",
+              "RelativeToolTip": "GameNightPlannerDal\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T08:11:58.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\jayde\\Documents\\GitHub\\Semester-2-Game-Night-planner\\GameNightPlanner\\GameNightPlannerLogic\\Class1.cs",
+              "RelativeDocumentMoniker": "GameNightPlannerLogic\\Class1.cs",
+              "ToolTip": "C:\\Users\\jayde\\Documents\\GitHub\\Semester-2-Game-Night-planner\\GameNightPlanner\\GameNightPlannerLogic\\Class1.cs",
+              "RelativeToolTip": "GameNightPlannerLogic\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T08:11:17.564Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
