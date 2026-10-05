@@ -1,8 +1,21 @@
+using GameNightPlannerDal;
+using GameNightPlannerLogic;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddScoped<IGameNightRepository>(serviceProvider =>
+{
+    var configuration = serviceProvider.GetRequiredService<IConfiguration>();
 
+    string connectionString =
+        configuration.GetConnectionString("DefaultConnection")
+        ?? throw new InvalidOperationException(
+            "Connection string was not found.");
+
+    return new GameNightRepository(connectionString);
+});
+builder.Services.AddScoped<GameNightService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

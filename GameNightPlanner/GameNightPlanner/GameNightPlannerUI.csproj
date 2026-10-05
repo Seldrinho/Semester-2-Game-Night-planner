@@ -6,4 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GameNightPlannerDal\GameNightPlannerDal.csproj" />
+    <ProjectReference Include="..\GameNightPlannerLogic\GameNightPlannerLogic.csproj" />
+  </ItemGroup>
+
 </Project>
