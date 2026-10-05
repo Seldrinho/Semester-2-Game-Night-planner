@@ -16,18 +16,51 @@ namespace GameNightPlanner.Pages
             _gameNightService = gameNightService;
         }
 
+        [BindProperty]
+        public string? Name { get; set; }
+
+        [BindProperty]
+        public string? Description { get; set; }
+
+        [BindProperty]
+        public DateTime ProposalDeadline { get; set; }
+
+        [BindProperty]
+        public DateTime VotingDeadline { get; set; }
+
         public void OnGet()
         {
-            var gameNight = new GameNight(
-         "Board Game Night",
-         "An evening of fun board games.",
-         DateTime.Now.AddDays(7),
-         DateTime.Now.AddDays(14),
-         1,
-         1
-         );
- 
-             _gameNightService.CreateGameNight(gameNight);
+
+        }
+
+        public void OnPost()
+        {
+            if (!ModelState.IsValid)
+            {
+                return;
+            }
+
+            try
+            {
+                var gameNight = new GameNight(
+                    Name,
+                    Description,
+                    ProposalDeadline,
+                    VotingDeadline,
+                    1, // Hardcoded for now
+                    1  // Hardcoded for now
+                );
+
+                _gameNightService.CreateGameNight(gameNight);
+            }
+            catch (ArgumentException ex)
+            {
+                ModelState.AddModelError(string.Empty, ex.Message);
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                ModelState.AddModelError(string.Empty, ex.Message);
+            }
         }
     }
 }

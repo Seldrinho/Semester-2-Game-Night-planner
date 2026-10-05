@@ -8,3 +8,27 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+<div asp-validation-summary="All"></div>
+<form method="post">
+
+    <div>
+        <label asp-for="Name">Title</label>
+        <input asp-for="Name" />
+    </div>
+
+    <div>
+        <label asp-for="Description">Description</label>
+        <textarea asp-for="Description"></textarea>
+    </div>
+
+    <div>
+        <label asp-for="ProposalDeadline">Proposal deadline</label>
+        <input asp-for="ProposalDeadline" type="datetime-local" />
+    </div>
+
+    <div>
+        <label asp-for="VotingDeadline">Voting deadline</label>
+        <input asp-for="VotingDeadline" type="datetime-local" />
+    </div>
+    <button type="submit">Create Game Night</button>
+</form>
