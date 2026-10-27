@@ -16,6 +16,18 @@ builder.Services.AddScoped<IGameNightRepository>(serviceProvider =>
     return new GameNightRepository(connectionString);
 });
 builder.Services.AddScoped<GameNightService>();
+builder.Services.AddScoped<IGameRepository>(serviceProvider =>
+{
+    var configuration = serviceProvider.GetRequiredService<IConfiguration>();
+
+    string connectionString =
+        configuration.GetConnectionString("DefaultConnection")
+        ?? throw new InvalidOperationException(
+            "Connection string was not found.");
+
+    return new GameRepository(connectionString);
+});
+builder.Services.AddScoped<GameService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

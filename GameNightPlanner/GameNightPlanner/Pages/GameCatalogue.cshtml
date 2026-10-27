@@ -1,0 +1,31 @@
+﻿@page
+@model GameNightPlannerUI.Pages.GameCatalogueModel
+@{
+}
+<h1>Gamecatalogus</h1>
+
+@if (Model.Games.Count == 0)
+{
+    <p>Er zijn nog geen games beschikbaar.</p>
+}
+else
+{
+    <ul>
+        @foreach (var game in Model.Games)
+        {
+            <li>
+                <h2>@game.Name</h2>
+
+                @if (!string.IsNullOrWhiteSpace(game.Description))
+                {
+                    <p>@game.Description</p>
+                }
+
+                <p>Genre: @game.Genre</p>
+                <p>Platform: @game.Platform</p>
+                <p>Speelduur: @game.EstimatedDuration minuten</p>
+                <p>Aantal spelers: @game.MinPlayers - @game.MaxPlayers</p>
+            </li>
+        }
+    </ul>
+}
